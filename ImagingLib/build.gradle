@@ -1,0 +1,11 @@
+group 'org.fhir'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+dependencies {
+    compile lib.hapi
+    compile lib.dcm
+
+    testCompile lib.junit
+}

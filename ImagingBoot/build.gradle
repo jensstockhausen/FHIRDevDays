@@ -1,0 +1,22 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
+  }
+}
+
+group 'org.fhir'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+  compile project(":ImagingLib")
+
+  compile lib.boot
+
+  testCompile group: 'junit', name: 'junit', version: '4.11'
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'DevDays'
+include 'ImagingLib'
+include 'ImagingApp'
+include 'ImagingBoot'
+

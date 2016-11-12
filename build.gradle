@@ -1,0 +1,12 @@
+group 'org.fhir'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+allprojects {
+  apply from: "$rootDir/dependencies.gradle"
+}
+
+
+
+
